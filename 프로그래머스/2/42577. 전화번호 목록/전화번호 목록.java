@@ -1,7 +1,6 @@
 import java.util.*;
 class Solution {
     public boolean solution(String[] phone_book) {
-        boolean answer = true;
         Set<String> set = new HashSet<>();
         
         for (int i = 0; i < phone_book.length; i++){
@@ -17,6 +16,6 @@ class Solution {
             }
         }
         
-        return answer;
+        return true;
     }
 }
