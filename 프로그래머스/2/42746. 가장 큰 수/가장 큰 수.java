@@ -5,12 +5,9 @@ class Solution {
         for (int i = 0; i < numbers.length; i++){
             str[i] = String.valueOf(numbers[i]);
         }
+        Arrays.sort(str, (x,y)-> (y + x).compareTo(x + y));
         
-        Arrays.sort(str, (x,y)->(y+x).compareTo(x+y));
-        
-        if (str[0].equals("0")){
-            return "0";
-        }
+        if (str[0].equals("0")) return "0";
         StringBuilder sb = new StringBuilder();
         for (String s : str){
             sb.append(s);
